@@ -1,17 +1,17 @@
 /** @format */
 
-:root {
-  --background-color: #ffdfd9;
-  --text-primary-color: #fe9e8d;
-  --text-secondary-color: #fe7e67;
-  --max-width: 1200px;
-}
 
-.category {
-  --cat-fast-food: #89c1d1;
-  --cat-swallow: #da8bcf;
-  --cat-common-food: #cb5dbb;
-}
+/* 
+ Typography  SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      
+ */
+
 
 * {
   padding: 0;
@@ -19,110 +19,3 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-/* Utility Class */
-.container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 0 2rem;
-  overflow: hidden;
-}
-
-.text-primary {
-  color: var(--text-primary-color);
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.btn {
-  display: inline-block;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  border: none;
-  font-weight: bold;
-  border-radius: 2rem;
-}
-.btn--cta {
-  background-color: var(--text-secondary-color);
-  color: #fff !important;
-  transition: opacity 0.4s ease;
-}
-.btn--cta:hover {
-  opacity: 0.8;
-}
-.btn--normal {
-  background-color: var(--text-primary-color);
-  color: #fff;
-}
-/* img {
-  width: 100%;
-} */
-
-/* Navigation */
-#navigation {
-  padding: 2rem;
-  background-color: var(--background-color);
-}
-.nav-container {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  gap: 2rem;
-}
-.nav-container h1 {
-  font-size: 4rem;
-}
-.list-container {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  gap: 2.5rem;
-}
-.list-container a {
-  color: #333;
-  font-size: 2rem;
-}
-/* Header */
-#header {
-  background-color: var(--background-color);
-  height: 100vh;
-}
-.header-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20rem;
-}
-.header-grid-text {
-  align-self: center;
-}
-.header-grid-text h2 {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  line-height: 1.1;
-}
-.header-grid-text p {
-  font-size: 2rem;
-  color: #777;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-.header-grid-text a {
-  margin-right: 1.2rem;
-  font-size: 1.2rem;
-}
-.header-grid img {
-  height: 50rem;
-  border-radius: 2rem;
-  align-self: end;
-  margin-top: 8rem;
-  transform: rotate(5deg);
-  transition: transform 0.6s;
-}
-.header-grid img:hover {
-  transform: rotate(0);
-}
