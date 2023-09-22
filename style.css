@@ -1,6 +1,5 @@
 /** @format */
 
-
 /* 
  Typography  SPACING SYSTEM (px)
       2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -12,10 +11,21 @@
       
  */
 
+:root {
+  --background-color: #ffdfd9;
+  --text-primary-color: #fe9e8d;
+  --text-secondary-color: #fe7e67;
+  --max-width: 1200px;
+}
+
+.category {
+  --cat-fast-food: #89c1d1;
+  --cat-swallow: #da8bcf;
+  --cat-common-food: #cb5dbb;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
