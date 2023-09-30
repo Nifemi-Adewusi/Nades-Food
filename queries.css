@@ -17,9 +17,9 @@
   }
 }
 @media (max-width: 58em) {
-  .header-nav.hidden {
+  /* .header-nav.hidden {
     display: none;
-  }
+  } */
   .header {
     position: relative;
   }
