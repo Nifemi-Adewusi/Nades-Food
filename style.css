@@ -17,9 +17,6 @@
   --text-secondary-color: #fe7e67;
   --max-width: 1200px;
   --tint-secondary-color: #fe9885;
-}
-
-.category {
   --cat-fast-food: #89c1d1;
   --cat-swallow: #da8bcf;
   --cat-common-food: #cb5dbb;
@@ -94,6 +91,14 @@ body {
 .header-nav li a:hover {
   color: var(--text-secondary-color);
 }
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.hide-btn {
+  display: none;
+}
 
 /* Hero Section */
 .hero-section {
@@ -149,4 +154,91 @@ body {
 }
 .hero-img:hover {
   transform: rotate(0);
+}
+
+/* Meal Section */
+.meals {
+  padding: 9.8rem 4.8rem;
+}
+.meal {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  transition: all 0.6s;
+}
+.meal:hover {
+  transform: translateY(-1.6rem);
+  cursor: pointer;
+}
+.food-number {
+  font-size: 1.8rem;
+  color: #666;
+  margin-left: 1rem;
+}
+.tag {
+  font-size: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.subheading {
+  color: var(--text-secondary-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.subheading,
+.secondary-heading {
+  display: flex;
+  justify-content: center;
+}
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10rem;
+  row-gap: 5rem;
+  margin-top: 1.8rem;
+}
+/* .meal{
+  border: 0.2px solid #333;
+} */
+.meal-title {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  background-color: var(--cat-fast-food);
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+}
+.meal-attributes {
+  list-style: none;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.meal-img {
+  width: 100%;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+.meal-text-container {
+  text-align: center;
+}
+.common-food {
+  background-color: var(--cat-common-food);
+}
+.spaghett-img{
+  height: 0.5rem;
+}
+.swallow{
+  background-color: var(--cat-swallow);
+}
+.span-2{
+  grid-column: span 2;
 }

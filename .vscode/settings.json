@@ -2,5 +2,6 @@
   "liveServer.settings.port": 5501,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  "compile-hero.disable-compile-files-on-did-save-code": true
 }
