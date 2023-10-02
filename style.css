@@ -242,3 +242,15 @@ body {
 .span-2{
   grid-column: span 2;
 }
+
+/* Carousel */
+.carousel{
+  background-color: var(--tint-secondary-color);
+}
+.carousel-padding{
+  padding: 9.6rem;
+}
+.carousel-text{
+  font-size: 2rem;
+  color: #333;
+}
