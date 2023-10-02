@@ -5,44 +5,394 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nades Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Nades Kitchen</title>
   </head>
   <body>
-    <nav id="navigation">
-      <div class="container">
-        <div class="nav-container">
-          <h1>Nades<span class="text-primary">Food.</span></h1>
-          <ul class="list-container">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#" class="btn btn--cta">Order Now</a></li>
-          </ul>
+    <!-- <header class="header">
+    <h2 class="heading-secondary">Nade's<span class="text-primary-color">Kitchen</span></h2>
+   <nav>Navigation</nav>
+    </header> -->
+
+    <!-- <main>
+    <section class="hero-section">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">
+            Eating healthy without breaking the bank.
+          </h1>
+          <p class="hero-description">
+            Here at Nade's Kitchen, we prioritise and give you nothing short of
+            the best without the need to spend excessively, we follow and use
+            healthy cooking materials, a conducive environment, because
+            <strong>You</strong> matter
+          </p>
+          <a href="#" class="btn btn--cta margin-right-sm"
+            >Start Eating Healthy</a
+          >
+          <a href="#" class="btn btn--outline">Learn More &dArr;</a>
+          <div class="delivered-box">
+            <div class="delivered-img">
+              <img src="/customer photos/1.jpg" alt="Customer Photo" />
+              <img src="/customer photos/2.jpg" alt="Customer Photo" />
+              <img src="/customer photos/3.jpg" alt="Customer Photo" />
+              <img src="/customer photos/4.jpg" alt="Customer Photo" />
+              <img src="/customer photos/5.jpg" alt="Customer Photo" />
+              <img src="/customer photos/6.jpg" alt="Customer Photo" />
+            </div>
+            <p class="delivered-text">
+              Our <span>Customer</span> Satisfaction Is Top Notch.
+            </p>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img
+            src="/Fast Food/Fruit-Matchup.jpg"
+            class="hero-img"
+            alt="Fruit Matchup" />
         </div>
       </div>
-    </nav>
-    <header id="header">
-      <div class="container">
-        <div class="header-grid">
-          <div class="header-grid-text">
-            <h2>Eating Healthy Without Breaking The Bank.</h2>
-            <p>
-              Here At Nade's Food, we ensure you get nothing short of the best
-              because <strong>You</strong> matter, our chefs follow the best
-              cooking practices, from healthy and approved cooking materials to
-              a decent and clean environment.
-            </p>
-            <div class="btns">
-              <a href="#" class="btn btn--normal">Learn More</a>
-              <a href="#" class="btn btn--cta">Get Started</a>
+    </section>
+  </main> -->
+
+    <header class="header">
+      <h1 class="primary-header">
+        Nade's<span class="primary-text">Kitchen</span>
+      </h1>
+      <nav>
+        <ul class="header-nav hidden">
+          <li><a href="#" class="btn">Home</a></li>
+          <li><a href="#" class="btn">About</a></li>
+          <li><a href="#" class="btn btn--cta">Order</a></li>
+        </ul>
+      </nav>
+      <ion-icon class="icon-mobile-nav hide-btn" name="menu-outline"></ion-icon>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="text-container">
+              <h1 class="primary-header">
+                Eating Healthy Without Breaking the bank
+              </h1>
+              <p class="hero-description">
+                Here at Nade's Kitchen, we prioritise and give you nothing short
+                of the best without the need to spend excessively, we follow and
+                use healthy cooking materials, a conducive environment, because
+                <strong>You</strong> matter
+              </p>
+              <div class="header-links">
+                <a href="#" class="btn btn--cta">Start Eating Healthy</a>
+                <a href="#" class="btn btn--outline">Learn More</a>
+              </div>
+              <div class="img-text-container">
+                <div class="img-and-text-container">
+                  <div class="customer-img-container">
+                    <img src="/customer photos/1.jpg" alt="Customer Image" />
+                    <img src="/customer photos/2.jpg" alt="Customer Image" />
+                    <img src="/customer photos/3.jpg" alt="Customer Image" />
+                    <img src="/customer photos/4.jpg" alt="Customer Image" />
+                    <img src="/customer photos/5.jpg" alt="Customer Image" />
+                    <img src="/customer photos/6.jpg" alt="Customer Image" />
+                  </div>
+                  <p>Our Priority Is You.</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/Fast Food/Fruit-Matchup.jpg" class="hero-img" alt="" />
             </div>
           </div>
-          <div class="hero-img-text-box">
-            <img src="/Fast Food/Fruit-Matchup.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Meals Section -->
+      <section class="meals">
+        <div class="container">
+          <span class="subheading">Our Meals</span>
+          <h2 class="secondary-heading">We offer 3 Meal Categories</h2>
+          <p class="tag"><span class="food-number">01</span> Fast Food</p>
+        </div>
+
+        <div class="container meal-grid">
+          <div class="meal">
+            <img
+              src="/Fast Food/Croissants.jpg"
+              class="meal-img"
+              alt="Croissants"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title">Croissants</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">400 Calories</li>
+                <li class="meal-attribute">Tasty and Yummy</li>
+                <li class="meal-attribute">Sprinkled Rasins</li>
+                <li class="meal-attribute">4.7 rating(404)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Fast Food/Nades-Special Green.jpg"
+              alt="Nade's-Special Green"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title">Nade's Green</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">600 Calories</li>
+                <li class="meal-attribute">100% Pure</li>
+                <li class="meal-attribute">100% Organic</li>
+                <li class="meal-attribute">4.8 rating (523)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Fast Food/Nades-Special.jpg"
+              alt="Nades Special"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title">Nade's Special</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">550 Calories</li>
+                <li class="meal-attribute">Chocolate Bread</li>
+                <li class="meal-attribute">Baked Fish</li>
+                <li class="meal-attribute">4.3 rating(126)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Fast Food/Onion-Burger.jpg"
+              alt="Onion-Burger"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title">Onion Burger</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">650 Calories</li>
+                <li class="meal-attribute">Organic Onions</li>
+                <li class="meal-attribute">Tasty and Yummy Fillings</li>
+                <li class="meal-attribute">4.6 rating(130)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="/Fast Food/pancakes.jpg" alt="" class="meal-img" />
+            <div class="meal-text-container">
+              <p class="meal-title">Pancakes</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">700 Calories</li>
+                <li class="meal-attribute">Toppings</li>
+                <li class="meal-attribute">Fruit and Jam Fillings</li>
+                <li class="meal-attribute">4.8 rating(297)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Fast Food/pexels-valeria-boltneva-18058357.jpg"
+              alt=""
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title">Nade's Grilled</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">750 Calories</li>
+                <li class="meal-attribute">Grilled Meat</li>
+                <li class="meal-attribute">Fruit Toppings and Spread</li>
+                <li class="meal-attribute">4.8 rating (782)</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+
+        <p class="container tag">
+          <span class="food-number">02</span>Common Food
+        </p>
+        <div class="container meal-grid">
+          <div class="meal">
+            <img
+              src="/Coomon-Food/ewa-agoyin.webp"
+              alt="Ewa Agoyin"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title common-food">Ewa Agoyin</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">600 Calories</li>
+                <li class="meal-attribute">Bread and Beans</li>
+                <li class="meal-attribute">Fried Stew</li>
+                <li class="meal-attribute">4.9 rating(1,345)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Coomon-Food/fried-rice.jpg"
+              alt="Fried Rice"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title common-food">Fried Rice</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">450 Calories</li>
+                <li class="meal-attribute">Rice Condiments</li>
+                <li class="meal-attribute">Vegetable Sprinkles</li>
+                <li class="meal-attribute">4.8 rating(2,456)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Coomon-Food/Jollof-rice.jpg"
+              alt="Jollof-rice"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title common-food">Jollof-rice</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">450 Calories</li>
+                <li class="meal-attribute">Chicken</li>
+                <li class="meal-attribute">Plaintain</li>
+                <li class="meal-attribute">4.9 rating(4,679)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Coomon-Food/noodles.jpg"
+              alt="Noodles"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title common-food">Noodles</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">300 Calories</li>
+                <li class="meal-attribute">Scrambled Eggs</li>
+                <li class="meal-attribute">Sprinkled Veggies</li>
+                <li class="meal-attribute">4.2 rating(8,145)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Coomon-Food/rice-atew.jpg"
+              alt="Rice And Stew"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title common-food">Rice and Stew</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">600 Calories</li>
+                <li class="meal-attribute">Plaintain</li>
+                <li class="meal-attribute">Beef</li>
+                <li class="meal-attribute">4.3 rating(10,345)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="/Coomon-Food/spaghetti-1.jpg"
+              alt="Spaghetti"
+              class="meal-img"
+            />
+            <div class="meal-text-container">
+              <p class="meal-title common-food">Spaghetti</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">350 Calories</li>
+                <li class="meal-attribute">Boiled Eggs</li>
+                <li class="meal-attribute">Sprinkled Veggies</li>
+                <li class="meal-attribute">4.9 rating(6,700)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="container tag"><span class="food-number">03</span>Swallow</p>
+        <div class="meal-grid container">
+          <div class="meal">
+            <img src="/swallow/Amala.jpg" alt="Amala" class="meal-img" />
+            <div class="meal-text-container">
+              <p class="meal-title swallow">Amala</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">450 Calories</li>
+                <li class="meal-attribute">Vegetables</li>
+                <li class="meal-attribute">Assorted Meat</li>
+                <li class="meal-attribute">4.9 rating(20,345)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="/swallow/Eba.jpg" alt="Eba" class="meal-img" />
+            <div class="meal-text-container">
+              <p class="meal-title swallow">Eba</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">500 Calories</li>
+                <li class="meal-attribute">Efo Riro</li>
+                <li class="meal-attribute">Assorted Meat</li>
+                <li class="meal-attribute">4.5 rating(28,343)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="/swallow/Fufu.jpg" alt="Fufu" class="meal-img" />
+            <div class="meal-text-container">
+              <p class="meal-title swallow">Fufu</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">600 Calories</li>
+                <li class="meal-attribute">Egusi</li>
+                <li class="meal-attribute">Ogunfe</li>
+                <li class="meal-attribute">4.7 rating(10,345)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="/swallow/semo.jpg" alt="Semo" class="meal-img" />
+            <div class="meal-text-container">
+              <p class="meal-title swallow">Semo</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">550 Calories</li>
+                <li class="meal-attribute">Grilled Beef</li>
+                <li class="meal-attribute">Egusi</li>
+                <li class="meal-attribute">4.8 rating(4,769)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal span-2">
+            <img src="/swallow/ponded-yam.jpg" alt="" class="meal-img" />
+            <div class="meal-text-container">
+              <p class="meal-title swallow">Pounded Yam</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">650 Calories</li>
+                <li class="meal-attribute">Egusi</li>
+                <li class="meal-attribute">Ponmo and Meat</li>
+                <li class="meal-attribute">4.9 rating(31,345)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
   </body>
 </html>
